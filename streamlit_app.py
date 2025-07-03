@@ -5,8 +5,8 @@ from PIL import Image
 import os
 import gdown
 
-MODEL_PATH = "model_jeruk_nipis.keras"
-DRIVE_URL = "https://drive.google.com/uc?id=1nVj22WaJU4hBS9ERzx1X5V4gNtFJ8JMe"
+MODEL_PATH = "model_jeruk_nipis.h5"
+DRIVE_URL = "https://drive.google.com/file/d/1q9fBvRl7J9BlS4rtBXTlFS_U4FECfBn3/view?usp=sharing"
 
 if not os.path.exists(MODEL_PATH):
     gdown.download(DRIVE_URL, MODEL_PATH, quiet=False)
