@@ -6,7 +6,7 @@ import os
 import gdown
 
 MODEL_PATH = "model_jeruk_nipis.h5"
-DRIVE_URL = "https://drive.google.com/file/d/1q9fBvRl7J9BlS4rtBXTlFS_U4FECfBn3/view?usp=sharing"
+model = tf.keras.models.load_model(MODEL_PATH)
 
 if not os.path.exists(MODEL_PATH):
     gdown.download(DRIVE_URL, MODEL_PATH, quiet=False)
